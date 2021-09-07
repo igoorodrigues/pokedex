@@ -1,15 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PokeHeaderComponent } from './poke-header/poke-header.component';
+import { RouterModule } from '@angular/router';
 
+
+//Components
+import { PokeHeaderComponent } from './poke-header/poke-header.component';
 
 
 @NgModule({
   declarations: [
-    PokeHeaderComponent
+    PokeHeaderComponent,
+  ],
+  exports: [
+    PokeHeaderComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class SharedModule { }
